@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Rectangle Perimeter</h3>
+
+  Length: <input id="length" type="number"><br><br>
+  Width: <input id="width" type="number"><br><br>
+  <button onclick="calc()">Calculate</button>
+
+  <p id="result"></p>
+
+  <script>
+    function calc() {
+      let l = document.getElementById("length").value;
+      let w = document.getElementById("width").value;
+      let p = 2 * (parseFloat(l) + parseFloat(w));
+      document.getElementById("result").innerText = "Perimeter = " + p;
+    }
+  </script>
+</body>
+</html>
